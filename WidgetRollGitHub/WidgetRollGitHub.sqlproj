@@ -254,4 +254,7 @@
     <None Include="Schema-Model\dbo\Tables\WidgetReferences.sql" />
     <None Include="Schema-Model\dbo\Tables\Widgets.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.1.0-Changes\001_20180517-0824_andrew.pierce.sql" />
+  </ItemGroup>
 </Project>
