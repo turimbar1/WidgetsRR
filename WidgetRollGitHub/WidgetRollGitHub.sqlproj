@@ -36,6 +36,7 @@
     <DeployOnceUseSemver>True</DeployOnceUseSemver>
     <SemverInitialBaseline>True</SemverInitialBaseline>
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
+    <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
