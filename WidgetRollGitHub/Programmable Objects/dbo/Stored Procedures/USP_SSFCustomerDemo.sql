@@ -1,0 +1,15 @@
+﻿IF OBJECT_ID('[dbo].[USP_SSFCustomerDemo]') IS NOT NULL
+	DROP PROCEDURE [dbo].[USP_SSFCustomerDemo];
+
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[USP_SSFCustomerDemo] AS
+BEGIN
+SELECT CustID
+     , CustDesc FROM dbo.customersDemo
+END
+
+GO

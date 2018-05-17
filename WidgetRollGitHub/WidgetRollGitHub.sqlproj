@@ -40,6 +40,7 @@
     <ExcludeObjectsFromSync />
     <IncludeObjectsInDataSync>
 Table=[dbo].[Contacts];
+Table=[dbo].[Widgets];
 </IncludeObjectsInDataSync>
     <DeployChangesExecutionOrder />
   </PropertyGroup>
@@ -264,5 +265,12 @@ Table=[dbo].[Contacts];
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\1.1.0-Changes\002_20180517-0837_andrew.pierce.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSFCustomerDemo.sql" />
+    <None Include="Migrations\1.1.0-Changes\003_20180517-1558_andrew.pierce.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.1.0-Changes\004_20180517-1607_andrew.pierce.sql" />
   </ItemGroup>
 </Project>
