@@ -37,6 +37,11 @@
     <SemverInitialBaseline>True</SemverInitialBaseline>
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
     <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
+    <ExcludeObjectsFromSync />
+    <IncludeObjectsInDataSync>
+Table=[dbo].[Contacts];
+</IncludeObjectsInDataSync>
+    <DeployChangesExecutionOrder />
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -256,5 +261,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\1.1.0-Changes\001_20180517-0824_andrew.pierce.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.1.0-Changes\002_20180517-0837_andrew.pierce.sql" />
   </ItemGroup>
 </Project>
