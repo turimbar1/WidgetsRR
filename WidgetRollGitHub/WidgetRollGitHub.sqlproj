@@ -273,4 +273,7 @@ Table=[dbo].[Widgets];
   <ItemGroup>
     <None Include="Migrations\1.1.0-Changes\004_20180517-1607_andrew.pierce.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.1.0-Changes\005_20180517-1633_andrew.pierce.sql" />
+  </ItemGroup>
 </Project>
