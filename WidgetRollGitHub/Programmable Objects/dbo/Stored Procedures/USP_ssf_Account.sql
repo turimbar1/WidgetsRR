@@ -1,4 +1,4 @@
-﻿IF OBJECT_ID('[dbo].[USP_ssf_Account]') IS NOT NULL
+IF OBJECT_ID('[dbo].[USP_ssf_Account]') IS NOT NULL
 	DROP PROCEDURE [dbo].[USP_ssf_Account];
 
 GO
@@ -6,61 +6,70 @@ SET QUOTED_IDENTIFIER ON
 GO
 SET ANSI_NULLS ON
 GO
-CREATE PROCEDURE [dbo].[USP_ssf_Account] AS
+CREATE PROCEDURE [dbo].[USP_SSF_Account] AS
 BEGIN
-SELECT [﻿ID]
-     , ISDELETED
-     , MASTERRECORDID
-     , NAME
-     , TYPE
-     , RECORDTYPEID
-     , PARENTID
-     , BILLINGSTREET
-     , BILLINGCITY
-     , BILLINGSTATE
-     , BILLINGPOSTALCODE
-     , BILLINGCOUNTRY
-     , BILLINGSTATECODE
-     , BILLINGCOUNTRYCODE
-     , BILLINGLATITUDE
-     , BILLINGLONGITUDE
-     , BILLINGGEOCODEACCURACY
-     , BILLINGADDRESS
-     , PHONE
-     , FAX
-     , ACCOUNTNUMBER
-     , WEBSITE
-     , PHOTOURL
-     , INDUSTRY
-     , USAGE_ALERT_EMAIL_DISTRIBUTION__C
-     , ACCESS_LEVEL__C
-     , ACCOUNT_OWNER_FULL_NAME__C
-     , BILLING_CONTACT__C
-     , MCS_ID__C
-     , DUPLICATE_GROUP__C
-     , DUPLICATE_SCORE__C
-     , POTENTIAL_DUPLICATE__C
-     , RECORD_CHECKED__C
-     , ACCEL_EXTERNAL_ID__C
-     , ORACLE_EXTERNAL_ID__C
-     , EXTERNAL_ID__C
-     , DATA_QUALITY_DESCRIPTION__C
-     , DATA_QUALITY_SCORE__C
-     , DUPCHECK__DC3DISABLEDUPLICATECHECK__C
-     , DUPCHECK__DC3INDEX__C
-     , ZUORA__CUSTOMERPRIORITY__C
-     , ZUORA__NUMBEROFLOCATIONS__C
-     , ZUORA__SLAEXPIRATIONDATE__C
-     , ZUORA__SLASERIALNUMBER__C
-     , ZUORA__SLA__C
-     , ZUORA__UPSELLOPPORTUNITY__C
-     , OLD_BILLING_STATE__C
-     , OLD_BILLING_COUNTRY__C
-     , BILLING_COUNTRY_NAME
-     , BILLING_COUNTRY_CODE
-     , BILLING_STATE_NAME
-     , BILLING_STATE_CODE
-     , RED_Gate_ID FROM dbo.Account_FF
+SELECT Id
+     , Name
+     , CreatedDate
+     , CreatedById
+     , LastModifiedDate
+     , LastModifiedById
+     , SystemModstamp
+     , LastViewedDate
+     , LastReferencedDate
+     , Description
+     , IsDeleted
+     , MasterRecordId
+     , Type
+     , RecordTypeId
+     , ParentId
+     , BillingStreet
+     , BillingCity
+     , BillingState
+     , BillingPostalCode
+     , BillingCountry
+     , BillingStateCode
+     , BillingCountryCode
+     , BillingLatitude
+     , BillingLongitude
+     , BillingGeocodeAccuracy
+     , BillingAddress
+     , ShippingStreet
+     , ShippingCity
+     , ShippingState
+     , ShippingPostalCode
+     , ShippingCountry
+     , ShippingStateCode
+     , ShippingCountryCode
+     , ShippingLatitude
+     , ShippingLongitude
+     , ShippingGeocodeAccuracy
+     , ShippingAddress
+     , Phone
+     , Website
+     , PhotoUrl
+     , Industry
+     , NumberOfEmployees
+     , CurrencyIsoCode
+     , OwnerId
+     , LastActivityDate
+     , IsPartner
+     , IsCustomerPortal
+     , Jigsaw
+     , JigsawCompanyId
+     , AccountSource
+     , SicDesc
+     , Support_level_ESBU__c
+     , Support_Pin_Code__c
+     , Accel_External_Id__c
+     , Access_Level__c
+     , Account_Number__c
+     , Account_Owner_Full_Name__c
+     , Approved_Agent__c
+     , Billing_Contact__c
+     , CCBU_Support_Level__c
+     , CSM_Units__c
+FROM dbo.Account;
 END
 
 GO

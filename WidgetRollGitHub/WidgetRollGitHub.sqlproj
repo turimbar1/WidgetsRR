@@ -41,8 +41,11 @@
     <IncludeObjectsInDataSync>
 Table=[dbo].[Contacts];
 Table=[dbo].[Widgets];
+Table=[dbo].[project];
 </IncludeObjectsInDataSync>
     <DeployChangesExecutionOrder />
+    <MigrationOrdering>SemanticVersioning</MigrationOrdering>
+    <Baselining>FolderBased</Baselining>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -275,5 +278,11 @@ Table=[dbo].[Widgets];
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\1.1.0-Changes\005_20180517-1633_andrew.pierce.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.1.0-Changes\006_20180613-1312_andrew.pierce.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.1.0-Changes\007_20180613-1321_andrew.pierce.sql" />
   </ItemGroup>
 </Project>
