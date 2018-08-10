@@ -37,7 +37,6 @@
     <SemverInitialBaseline>True</SemverInitialBaseline>
     <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
     <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
-    <ExcludeObjectsFromSync />
     <IncludeObjectsInDataSync>
 Table=[dbo].[Contacts];
 Table=[dbo].[Widgets];
@@ -284,5 +283,9 @@ Table=[dbo].[project];
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\1.1.0-Changes\007_20180613-1321_andrew.pierce.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSF_WidgetPrices.sql" />
+    <None Include="Migrations\1.1.0-Changes\008_20180810-1532_andrew.pierce.sql" />
   </ItemGroup>
 </Project>
