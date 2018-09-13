@@ -288,4 +288,8 @@ Table=[dbo].[project];
     <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSF_WidgetPrices.sql" />
     <None Include="Migrations\1.1.0-Changes\008_20180810-1532_andrew.pierce.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmable Objects\dbo\Stored Procedures\USP_SSF_CustDemo.sql" />
+    <None Include="Migrations\1.1.0-Changes\009_20180913-1255_andrew.pierce.sql" />
+  </ItemGroup>
 </Project>
